@@ -41,6 +41,7 @@ Install Cosmos+ Using The Install Script
 ```bash
   sudo bash install.sh
 ```
+Apache2 will be installed using the install.sh
 
 ## Commands
 
@@ -72,7 +73,7 @@ You can use tools like [cococut](https://cococut.net/) to get M3U8 Links.
 
 *Why do the Websites I get my M3U8 links from have ads?*
 
-The Ads on other websites aren't controlled by us, we recommend getting these Extensions:
+The Ads on other websites aren't controlled by us, we recommend getting these Extensions to minimize the amount of ads you see:
 - [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [Privacy Badger](https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 - [I don't Care About Cookies](https://chromewebstore.google.com/detail/i-dont-care-about-cookies/fihnjjcciajhdojfnbdddfaoknhalnja)
