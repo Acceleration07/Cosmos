@@ -1,7 +1,7 @@
 
 # Cosmos+
 
-A Linux Movie/TV-Show Watching Website
+A Debian/Ubuntu Movie/TV-Show Watching Website
 
 - [Features](#features)
 - [Installation](#installation)
@@ -20,10 +20,25 @@ A Linux Movie/TV-Show Watching Website
 
 ## Installation
 
-Install my-project with bash
+Install Cosmos+ with bash
+- First download the files from [Releases](https://github.com/chuck4565656/Cosmos/releases), and move the zip file to a folder that won't change (NOTE: *if the folder changes the website will break*)
 
+Navigate to your Project folder
 ```bash
-  cd /{project-folder}/Cosmos+
+  cd /{project-folder}/
+```
+Extract Release File
+```bash
+  unzip Cosmos+.zip
+```
+
+Navigate to Cosmos+ Folder
+```bash
+  cd Cosmos+
+```
+
+Install Cosmos+ Using The Install Script
+```bash
   sudo bash install.sh
 ```
 
