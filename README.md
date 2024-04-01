@@ -3,6 +3,12 @@
 
 A Linux Movie/TV-Show Watching Website
 
+- [Features](https://github.com/chuck4565656/Cosmos/tree/main#features)
+- [Installation](https://github.com/chuck4565656/Cosmos/tree/main#installation)
+- [Commands](https://github.com/chuck4565656/Cosmos/tree/main#commands)
+- [FAQ](https://github.com/chuck4565656/Cosmos/tree/main#faq)
+
+
 
 ## Features
 
