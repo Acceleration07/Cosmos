@@ -1,0 +1,118 @@
+@media screen and (min-width: 600px) {
+
+.main-icon {
+    height: 80px;
+    width: 80px;
+    top: 0px;
+    }
+
+.user-icon {
+    position: fixed;
+    display: inline-block;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+    top: 14px;
+    cursor: pointer;
+    border: 2px solid #9e9e9e;
+    border-radius: 100px;
+    -webkit-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.user-icon:hover .icon-options {
+  display: block;
+}
+
+.icon-options {
+    border: 2px solid #9e9e9e;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 400px;
+    right: 0;
+    padding-left: 17px;
+    background-color: #16161d;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    z-index: 1;
+    -webkit-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+.icon-option {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.icon-option:hover {
+  opacity: 0.7;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.main-icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #9e9e9e;
+    border-radius: 100px;
+    }
+
+.user-icon {
+    position: absolute;
+    display: inline-block;
+    right: 40px;
+    max-width: 60px;
+    max-height: 60px;
+    top: 0px;
+    cursor: pointer;
+    border-radius: 100px;
+    -webkit-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+}
+
+.user-icon:hover .icon-options {
+  display: block;
+}
+
+.icon-options {
+    border: 2px solid #9e9e9e;
+    display: none;
+    position: absolute;
+    top: 75px;
+    width: 400px;
+    right: -50px;
+    padding-left: 17px;
+    background-color: #16161d;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    z-index: 1;
+    -webkit-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    box-shadow: 4px 4px 35px 0px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+.icon-option {
+    width: 50px;
+    height: 50px;
+    max-width: 80px;
+    max-height: 80px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.icon-option:hover {
+  opacity: 0.7;
+}
+}
