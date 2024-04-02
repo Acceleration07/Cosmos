@@ -1,5 +1,5 @@
 
-# Cosmos+ | NOT DONE DON'T DOWNLOAD
+# Cosmos+
 
 A Debian/Ubuntu Movie/TV-Show Watching Website
 
