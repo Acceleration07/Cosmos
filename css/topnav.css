@@ -1,0 +1,153 @@
+/* Define the styles for the sidenav and topnav */
+.sidenav {
+  display: none;
+}
+
+.topnav {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+/* Show the sidenav or topnav depending on the viewport width */
+@media screen and (max-width: 600px) {
+  .burger {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    left: 20px;
+    position: absolute;
+    transition: all 0.05s ease-in-out;
+}
+  .burger:hover {
+    text-shadow: 0 0 7px #FFFFFF;
+
+}
+.main-icon {
+    width: 190px;
+    height: 70px;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);  
+    top: 10px;
+}
+.main-icon-w {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);}
+
+  .sidenav {
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #312a45;
+    overflow-x: hidden;
+    transition: all 0.05s ease-in-out;
+    padding-top: 60px;
+    -webkit-box-shadow: 10px 0px 23px -3px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 0px 23px -3px rgba(0,0,0,0.29);
+    box-shadow: 10px 0px 23px -3px rgba(0,0,0,0.29);
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+    color: white;
+    z-index: 3;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .sidenav a:hover {
+    text-shadow: 0 0 7px #FFFFFF;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+.main-icon {
+    width: 190px;
+    height: 70px;
+    position: absolute;
+    bottom: 45px;
+    top: 70px;
+}
+.main-icon-w {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    right: 100px;
+    top: -55px;
+    }
+    .topnav {
+    display: block;
+    width: 100%;
+    background: rgb(59,47,74);
+    background: linear-gradient(180deg, rgba(59,47,74,0.6404936974789917) 0%, rgba(59,47,74,0) 100%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    z-index: 1000;
+    transition: all 0.1s ease-in-out;
+
+  }
+
+.scrolled {
+  background-color: #312a45;
+}    
+
+  .topnav a {
+    position: relative;
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 80px;
+    height: 80px;
+    top: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.05s ease-in-out;
+
+  }
+
+  .topnav a:hover {
+    text-shadow: 0 0 7px #FFFFFF;
+  }
+}

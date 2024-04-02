@@ -1,0 +1,363 @@
+@media screen and (min-width: 600px) {
+  .mySlides:hover .rounded-logo {
+    transform: scale(1.01) translateX(0%) translateY(-50%);
+  }
+  
+  /* Apply the blur effect to the .rounded class inside the parent container on hover */
+  .mySlides:hover .rounded {
+    filter: blur(1px);
+  }
+
+.rounded {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.35); 
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.35);
+  transition: all .15s ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);  
+  position: absolute;
+  overflow: hidden;
+}
+.rounded-logo {
+  border-radius: 20px;
+  position: absolute;
+  transition: all .15s ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);  position: absolute;
+}
+}
+
+.rounded-logo:hover {
+  transform: rotate(4%);
+}
+.slideshow-container {
+    width: 70%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+}
+.dot-position {
+  text-align: right;
+  user-select: none;
+  position: relative;
+  right: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 100%;
+}
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px
+}
+.next:hover,
+.prev:hover {
+  background-color: rgba(0,0,0,.8)
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@media only screen and (max-width:300px) {
+  .next,
+  .prev,
+  .text {
+    font-size: 11px
+  }
+}
+  
+@media screen and (max-width: 600px) {
+
+html {
+    overflow: hidden;
+}
+.slideshow-container {
+  width: 85%;
+  padding-top: 100px;
+  height: 0px;
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  transform: translateX(-50%);
+}
+.dot-position {
+  text-align: right;
+  user-select: none;
+  position: absolute;
+  right: -90px;
+  rotate: -90deg;
+  transform: translateX(-50%);
+  top: 5%;
+  z-index: 100;
+  width: 100%;
+}
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 0.25fr));
+    gap: 23px;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    top: 300px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+
+.continuewatext {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    color: white;
+}
+
+    
+.rounded {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.43); 
+  box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.43);
+  transition: all .15s ease-in-out;
+  top: 15%;
+  transform: translateY(-50%);  
+  position: absolute;
+}
+.rounded-logo {
+  border-radius: 20px;
+  position: absolute;
+  transition: all .15s ease-in-out;
+  top: 15%;
+  transform: translateY(-50%);
+}
+}
+.rounded-logo:hover {
+  transform: scale(1.01) translateX(0%) translateY(-50%);
+}
+.rounded-logo:hover .rounded {
+  filter: blur(5px);
+}
+
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px
+}
+.next:hover,
+.prev:hover {
+  background-color: rgba(0,0,0,.8)
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0
+}
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #5e398f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .2s ease;
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.35); 
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.35);
+}
+.active,
+.dot:hover {
+  background-color: #ead5eb;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@media only screen and (max-width:300px) {
+  .next,
+  .prev,
+  .text {
+    font-size: 11px
+  }
+
+
+    
+}
+
+.mySlides {
+  display: none
+}
+
+
+@media only screen and (min-width:601px) {
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(75px, 1fr));
+    gap: 10px;
+    position: absolute;
+    left: 85px;
+    bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.continuewatext {
+    position: absolute;
+    bottom: 160px;
+    left: 83px;
+    color: white;
+}
+
+}
+.movie-banner img {
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.movie-banner {
+  position: relative;
+  max-height: 150px;
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+  background-size: cover;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 14px 6px 41px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 14px 6px 41px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 14px 6px 41px 0px rgba(0, 0, 0, 0.23);
+  background-color: #362b4493;
+}
+
+.close-button {
+    position: absolute;
+    border: none;
+    top: 3px;
+    right: 3px;
+    background-color: #57456e;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 1.3px;
+    padding-bottom: 1.3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.movie-banner:hover {
+  transform: scale(1.03);
+}
+
+.movie-banner:hover .close-button{
+    opacity: 100;
+}
+
+.close-button:hover {
+    background-color: #a684d1;
+
+}
