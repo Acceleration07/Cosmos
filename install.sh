@@ -76,7 +76,8 @@ echo "Installing the Apache2 Webserver"
 echo ""
 echo ""
 sudo apt update
-sudo apt install apache2
+sudo apt install -y apache2
+sudo apt install -y ffmpeg
 echo ""
 Suser=$SUDO_USER
 echo "Apache2 Installed"
