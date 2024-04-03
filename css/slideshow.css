@@ -152,7 +152,7 @@ html {
     position: absolute;
     left: 60%;
     transform: translateX(-50%);
-    top: 300px;
+    top: 0px;
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
@@ -289,11 +289,11 @@ html {
 
 .movie-grid {
     display: grid;
-    grid-template-columns: repeat(9, minmax(75px, 1fr));
+    grid-template-columns: repeat(6, minmax(75px, 1fr));
     gap: 10px;
     position: absolute;
     left: 85px;
-    bottom: 20px;
+    bottom: 40px;
     width: 100%;
     max-width: 1200px;
 }
@@ -301,7 +301,7 @@ html {
 
 .continuewatext {
     position: absolute;
-    bottom: 160px;
+    bottom: 450px;
     left: 83px;
     color: white;
 }
@@ -317,9 +317,9 @@ html {
 
 .movie-banner {
   position: relative;
-  max-height: 150px;
-  width: 100px;
-  height: 150px;
+  max-height: 400px;
+  width: 150px;
+  height: 200px;
   cursor: pointer;
   background-size: cover;
   border-radius: 6px;
