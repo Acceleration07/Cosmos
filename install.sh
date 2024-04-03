@@ -81,9 +81,9 @@ echo ""
 Suser=$SUDO_USER
 echo "Apache2 Installed"
 echo "Creating Config File"
-sed -i '5s#.*#    <Directory '"$filepath"':80>#' os-files/apache2conf.xml
+sed -i '5s#.*#    <Directory '"$filepath"'>#' os-files/apache2conf.xml
 sed -i '3s#.*#    DocumentRoot '"$filepath"'#' os-files/apache2conf.xml
-sed -i '1s#.*#<VirtualHost '"$ipadd"'>#' os-files/apache2conf.xml
+sed -i '1s#.*#<VirtualHost '"$ipadd"':80>#' os-files/apache2conf.xml
 echo "Adjusting Permissions"
 sudo chown -R $Suser:www-data $filepath
 sudo usermod -a -G www-data $Suser
