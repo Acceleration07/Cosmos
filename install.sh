@@ -109,4 +109,5 @@ echo ""
 echo "$line"
 sudo systemctl start apache2
 sudo systemctl restart apache2
+source ~/.bashrc
 echo "Completed, Cosmos+ is now active"
