@@ -73,14 +73,15 @@ echo ""
 echo ""
 sudo apt install apache2
 echo ""
+$Suser=$(sudo sh -c 'echo $SUDO_USER')
 echo "Apache2 Installed"
 echo "Creating Config File"
-sed -i '5s#.*#    <Directory '"$filepath"'>#' os-files/apache2conf.xml
+sed -i '5s#.*#    <Directory '"$filepath"':80>#' os-files/apache2conf.xml
 sed -i '3s#.*#    DocumentRoot '"$filepath"'#' os-files/apache2conf.xml
 sed -i '1s#.*#<VirtualHost '"$ipadd"'>#' os-files/apache2conf.xml
 echo "Adjusting Permissions"
-sudo chown -R $USER:www-data $filepath
-sudo usermod -a -G www-data $USER
+sudo chown -R $Suser:www-data $filepath
+sudo usermod -a -G www-data $Suser
 sudo cp os-files/apache2conf.xml /etc/apache2/sites-enabled/000-default.conf
 echo ""
 echo "$line"
@@ -90,10 +91,14 @@ echo "To Get Started Inporting Movies and Tv-Shows Run:     "
 echo "movie-download, tv-download, and tv-download-web"
 sudo cp scripts/movie-download.sh /usr/local/bin/movie-download
 sudo chmod +X /usr/local/bin/movie-download
+sudo chown $Suser:www-data /usr/local/bin/movie-download
 sudo cp scripts/tv-download.sh /usr/local/bin/tv-download
 sudo chmod +X /usr/local/bin/tv-download
+sudo chown $Suser:www-data /usr/local/bin/tv-download
 sudo cp scripts/tv-download-web.sh /usr/local/bin/tv-download-web
 sudo chmod +X /usr/local/bin/tv-download-web
+sudo chown $Suser:www-data /usr/local/bin/tv-download-web
+
 echo ""
 echo "$line"
 sudo systemctl start apache2
