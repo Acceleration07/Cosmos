@@ -1,9 +1,10 @@
 
 # Cosmos+
 
-A Debian/Ubuntu Movie/TV-Show Watching Website
+A Linux Debian/Ubuntu Distro Movie/TV-Show Watching Website
 
 - [Features](#features)
+- [Disclaimers](#disclaimers)
 - [Installation](#installation)
 - [Commands](#commands)
 - [FAQ](#faq)
@@ -17,7 +18,11 @@ A Debian/Ubuntu Movie/TV-Show Watching Website
 - Continue Watching Feature
 - Easy Movie Installation
 
+## Disclaimers
 
+- This is most ideal for servers or computers that are always on
+- This is NOT persistant with network changes, so it will break if the network ip changes
+ 
 ## Installation
 
 Install Cosmos+ with bash
@@ -60,12 +65,6 @@ Downloading TV-Shows Command (It will ask for IMDb Link)
 
 ```bash
   tv-download
-```
-
-See how many Movies and TV-Shows you have installed to Cosmos+
-
-```bash
-  movie-count
 ```
 
 Download the Video Files for the TV-Shows
