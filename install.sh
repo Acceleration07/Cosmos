@@ -97,14 +97,15 @@ echo "movie-download, tv-download, and tv-download-web"
 hdir="/home/$Suser"
 mkdir $hdir/bin
 sudo cp scripts/movie-download.sh $hdir/bin/movie-download
-sudo chmod +X $hdir/bin/movie-download
+sudo chmod 755 $hdir/bin/movie-download
 sudo chown $Suser:$Suser $hdir/bin/movie-download
 sudo cp scripts/tv-download.sh $hdir/bin/tv-download
-sudo chmod +X $hdir/bin/tv-download
+sudo chmod 755 $hdir/bin/tv-download
 sudo chown $Suser:$Suser $hdir/bin/tv-download
 sudo cp scripts/tv-download-web.sh $hdir/bin/tv-download-web
-sudo chmod +X $hdir/bin/tv-download-web
+sudo chmod 755 $hdir/bin/tv-download-web
 sudo chown $Suser:$Suser $hdir/bin/tv-download-web
+sudo chmod +X $hdir/bin
 sed -i '$ a\export PATH="$HOME/bin:$PATH"' $hdir/.bashrc
 echo ""
 echo "$line"
