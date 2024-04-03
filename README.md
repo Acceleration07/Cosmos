@@ -56,18 +56,25 @@ Downloading Movies Command (It will ask for IMDb Link, and M3U8 Link)
   movie-download
 ```
 
-Downloading TV-Shows Command (It will ask for IMDb Link, and txt Link)
+Downloading TV-Shows Command (It will ask for IMDb Link)
 
 ```bash
   tv-download
 ```
-*inside the txt file you will put the m3u8 link for each episode*
 
 See how many Movies and TV-Shows you have installed to Cosmos+
 
 ```bash
   movie-count
 ```
+
+Download the Video Files for the TV-Shows
+
+```bash
+  tv-download-web
+```
+*inside the txt file you will put the m3u8 link for each episode*
+
 ## FAQ
 
 *How do I Get M3U8 Links?*
