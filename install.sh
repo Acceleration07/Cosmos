@@ -96,13 +96,13 @@ echo "To Get Started Inporting Movies and Tv-Shows Run:     "
 echo "movie-download, tv-download, and tv-download-web"
 sudo cp scripts/movie-download.sh /usr/local/bin/movie-download
 sudo chmod +X /usr/local/bin/movie-download
-sudo chown $Suser:www-data /usr/local/bin/movie-download
+sudo chown $Suser:$Suser /usr/local/bin/movie-download
 sudo cp scripts/tv-download.sh /usr/local/bin/tv-download
 sudo chmod +X /usr/local/bin/tv-download
-sudo chown $Suser:www-data /usr/local/bin/tv-download
+sudo chown $Suser:$Suser /usr/local/bin/tv-download
 sudo cp scripts/tv-download-web.sh /usr/local/bin/tv-download-web
 sudo chmod +X /usr/local/bin/tv-download-web
-sudo chown $Suser:www-data /usr/local/bin/tv-download-web
+sudo chown $Suser:$Suser /usr/local/bin/tv-download-web
 
 echo ""
 echo "$line"
