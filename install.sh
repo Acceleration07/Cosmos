@@ -94,16 +94,17 @@ echo "Webserver Started, You can access Cosmos+ Here:       "
 echo "http://$ipadd/home.html"
 echo "To Get Started Inporting Movies and Tv-Shows Run:     "
 echo "movie-download, tv-download, and tv-download-web"
-sudo cp scripts/movie-download.sh /usr/local/bin/movie-download
-sudo chmod +X /usr/local/bin/movie-download
-sudo chown $Suser:$Suser /usr/local/bin/movie-download
-sudo cp scripts/tv-download.sh /usr/local/bin/tv-download
-sudo chmod +X /usr/local/bin/tv-download
-sudo chown $Suser:$Suser /usr/local/bin/tv-download
-sudo cp scripts/tv-download-web.sh /usr/local/bin/tv-download-web
-sudo chmod +X /usr/local/bin/tv-download-web
-sudo chown $Suser:$Suser /usr/local/bin/tv-download-web
-
+mkdir $HOME/bin
+sudo cp scripts/movie-download.sh $HOME/bin/movie-download
+sudo chmod +X $HOME/bin/movie-download
+sudo chown $Suser:$Suser $HOME/bin/movie-download
+sudo cp scripts/tv-download.sh $HOME/bin/tv-download
+sudo chmod +X $HOME/bin/tv-download
+sudo chown $Suser:$Suser $HOME/bin/tv-download
+sudo cp scripts/tv-download-web.sh $HOME/bin/tv-download-web
+sudo chmod +X $HOME/bin/tv-download-web
+sudo chown $Suser:$Suser $HOME/bin/tv-download-web
+sed -i '$ a\export PATH="$HOME/bin:$PATH"' $HOME/.bashrc
 echo ""
 echo "$line"
 sudo systemctl start apache2
