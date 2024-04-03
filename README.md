@@ -50,7 +50,7 @@ Install Cosmos+ Using The Install Script
 ```bash
   sudo bash install.sh
 ```
-Apache2 will be installed using the install.sh
+Apache2 and FFmpeg will be installed using the install.sh
 
 ## Commands
 
