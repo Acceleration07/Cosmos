@@ -2,7 +2,7 @@
 
 
 cd
-cd $filepath
+cd $filepath/movies
 read -p "IMDb Code or link: " response
 read -p "Enter M3U8 Link: " file_link
 imdb_code=""
