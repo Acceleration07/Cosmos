@@ -71,6 +71,7 @@ fi
 echo "Installing the Apache2 Webserver"
 echo ""
 echo ""
+sudo apt update
 sudo apt install apache2
 echo ""
 $Suser=$(sudo sh -c 'echo $SUDO_USER')
