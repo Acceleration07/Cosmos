@@ -78,7 +78,7 @@ echo ""
 sudo apt update
 sudo apt install apache2
 echo ""
-$Suser=$SUDO_USER
+Suser=$SUDO_USER
 echo "Apache2 Installed"
 echo "Creating Config File"
 sed -i '5s#.*#    <Directory '"$filepath"':80>#' os-files/apache2conf.xml
