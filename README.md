@@ -38,7 +38,7 @@ Navigate to where you want the project folder to be
 
 Clone The Repository
 ```bash
-  git clone https://github.com/chuck4565656/Cosmos.git
+  git clone https://github.com/Acceleration07/Cosmos.git
 ```
 
 Navigate to your Project folder
