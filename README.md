@@ -22,6 +22,7 @@ A Linux Debian/Ubuntu Distro Movie/TV-Show Watching Website
 
 - This is most ideal for servers or computers that are always on
 - This is NOT persistant with network changes, so it will break if the network ip changes
+- This will NOT run on any Windows
  
 ## Installation
 
