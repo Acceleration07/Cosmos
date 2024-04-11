@@ -92,5 +92,5 @@ The Ads on other websites aren't controlled by us, we recommend getting these Ex
 
 ## Authors
 
-- [@Acceleration07](https://www.github.com/chuck4565656)
+- [@Acceleration07](https://www.github.com/Acceleration07)
 
