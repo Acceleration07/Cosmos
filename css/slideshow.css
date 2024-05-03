@@ -147,12 +147,12 @@ html {
 }
   .movie-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(10px, 0.25fr));
-    gap: 23px;
+    grid-template-columns: repeat(2, minmax(10px, 0.36fr));
+    gap: 30px;
     position: absolute;
     left: 60%;
     transform: translateX(-50%);
-    top: 0px;
+    top: 150px;
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
@@ -161,7 +161,7 @@ html {
 
 .continuewatext {
     position: absolute;
-    top: 250px;
+    top: 90px;
     left: 50px;
     color: white;
 }
@@ -293,7 +293,7 @@ html {
     gap: 10px;
     position: absolute;
     left: 85px;
-    bottom: 40px;
+    top: 200px;
     width: 100%;
     max-width: 1200px;
 }
@@ -301,7 +301,7 @@ html {
 
 .continuewatext {
     position: absolute;
-    bottom: 450px;
+    top: 145px;
     left: 83px;
     color: white;
 }
